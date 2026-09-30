@@ -1,0 +1,30 @@
+{
+  "id": "/health-lab/en/",
+  "name": "Ken-go Health Lab",
+  "short_name": "Ken-go",
+  "lang": "en",
+  "start_url": "/health-lab/en/",
+  "scope": "/health-lab/",
+  "display": "standalone",
+  "background_color": "#f4f7fa",
+  "theme_color": "#102e39",
+  "icons": [
+    {
+      "src": "../icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "../icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "../icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
