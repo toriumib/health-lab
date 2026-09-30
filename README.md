@@ -1,4 +1,4 @@
-# ヘルスラボ / HEALTH LAB
+# ヘルスラボ / Health Lab
 
 自分の健康を、測って育てる。Mac・Android・ブラウザで使う個人の健康管理ツール。
 公開版: https://toriumis.com/health-lab/
@@ -20,7 +20,7 @@ Bryan Johnsonの個人プロトコルとNIH/WHOの一般的指針を区別して
 実験の前後差は個人の観察であり、因果効果を証明しません。
 
 ## データ
-localStorageの既存 health-lab-v1 キーを使用。旧版の日記・実践は保持します。
+localStorageの health-lab-v1 キーを使用（初回起動時に旧 kengo-v1 から自動引っ越し）。旧版の日記・実践は保持します。
 JSON形式の version は旧バックアップ互換の1。拡張 fields: days[*].measurements / routine / experiments / timerSessions。
 ブラウザ保存は暗号化や認証を意味しません。Toriumis.com全体で同一オリジンの保存領域を共有するため、同じサイトのスクリプトからアクセス可能です。拡張機能・共有端末・クラウド同期の保管先に注意。
 記録の外部送信、AI送信、分析SDK、課金、アカウント、広告なし。配信サービスのアクセスログは別途残り得ます。

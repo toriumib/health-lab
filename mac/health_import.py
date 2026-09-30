@@ -231,7 +231,7 @@ def import_health(xml_path: Path, output: Path, *, timezone_name: str = "Asia/To
     overrides = overrides or {}
     if any(metric not in METRICS or not source for metric, source in overrides.items()):
         raise ValueError("Invalid source override")
-    with tempfile.TemporaryDirectory(prefix="health-lab-health-", dir=temp_directory) as folder:
+    with tempfile.TemporaryDirectory(prefix="health-lab-", dir=temp_directory) as folder:
         conn = make_database(Path(folder) / "samples.sqlite")
         try:
             stats = read_records(xml_path, conn, zone)

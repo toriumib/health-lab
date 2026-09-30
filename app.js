@@ -1,5 +1,7 @@
 'use strict';
 const $=s=>document.querySelector(s),C=HealthLabCore,key='health-lab-v1';
+// 旧キー(kengo-v1)からの一回限りの引っ越し。移行できたら外してよい。
+try{if(localStorage.getItem('health-lab-v1')==null){const prev=localStorage.getItem('kengo-v1');if(prev)localStorage.setItem('health-lab-v1',prev);}}catch{}
 const dayKey=(d=new Date())=>`${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}`;
 const blank=()=>({version:1,days:{},routine:[],experiments:[],timerSessions:[]});
 function read(){try{return C.normalize(JSON.parse(localStorage.getItem(key)));}catch{return blank();}}
